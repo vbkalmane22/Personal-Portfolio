@@ -1,0 +1,21 @@
+<section id="skills" class="min-h-screen flex items-center justify-center py-20 px-6 bg-gray-800">
+    <div class="container mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Skills & Expertise</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 px-4">
+        <div *ngFor="let skill of skills; let index = index">
+          <div
+            @fadeInUp
+            class="bg-gray-700 rounded-lg p-4 text-center hover:bg-gray-600 transition-colors"
+           
+          >
+          <ng-icon 
+          [name]="skill.icon" 
+          class="mx-auto mb-4 w-12 h-12 object-contain text-white">
+        </ng-icon>
+            <p class="text-sm sm:text-base font-semibold text-white">{{ skill.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

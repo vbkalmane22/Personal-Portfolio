@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { trigger, style, animate, transition,state } from '@angular/animations';
 import { NgIf,NgFor } from '@angular/common';
+import { ScrollProgressComponent } from "../scroll-progress/scroll-progress.component";
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgIf,NgFor],
+  imports: [NgIf, NgFor, ScrollProgressComponent],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
   animations: [

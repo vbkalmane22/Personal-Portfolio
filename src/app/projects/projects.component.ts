@@ -37,7 +37,7 @@ export class ProjectsComponent {
       description: 'A handy application that evenly splits any given amount among a specified number of people.',
       tech: ['React', 'Node.js', 'Typescript','Javascript','Tailwind'],
       image: 'splitter.png',
-      link: 'https://github.com/vbkalmane22/splitterapplication',
+      link: 'https://github.com/vbkalmane10/splitterapplication',
     },
     {
       title: 'Library Management App',

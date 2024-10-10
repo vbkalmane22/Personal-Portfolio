@@ -1,14 +1,16 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-scroll-progress',
   standalone: true,
-  imports: [],
   templateUrl: './scroll-progress.component.html',
-  styleUrl: './scroll-progress.component.css'
+  styleUrls: ['./scroll-progress.component.css']
 })
-export class ScrollProgressComponent {
+export class ScrollProgressComponent implements OnInit {
   scrollProgress = 0;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
     this.updateScrollProgress();
@@ -20,9 +22,11 @@ export class ScrollProgressComponent {
   }
 
   private updateScrollProgress() {
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPosition = window.scrollY;
+    if (isPlatformBrowser(this.platformId)) {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPosition = window.scrollY;
 
-    this.scrollProgress = (scrollPosition / totalHeight) * 100;
+      this.scrollProgress = (scrollPosition / totalHeight) * 100;
+    }
   }
 }

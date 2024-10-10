@@ -11,13 +11,17 @@ import { FormsModule } from '@angular/forms';
 })
 export class GetintouchComponent {
   submitted = false; 
- 
+ isSubmitting=false;
   onSubmit(form: any) {
     if (form.valid) {
+      this.isSubmitting=true;
       
-      console.log('Form Submitted!', form.value);
-      this.submitted = true;
-      form.reset(); 
+      setTimeout(() => {
+        this.submitted = true;  
+        this.isSubmitting = false;  
+        console.log('Form Submitted!', form.value);
+        form.reset();  
+      }, 2000)
     } else {
      
       console.log('Form is invalid');

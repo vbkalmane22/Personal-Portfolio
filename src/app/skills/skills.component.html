@@ -8,10 +8,11 @@
             class="bg-gray-700 rounded-lg p-4 text-center hover:bg-gray-600 transition-colors"
            
           >
-          <ng-icon 
-          [name]="skill.icon" 
-          class="mx-auto mb-4 w-12 h-12 object-contain text-white">
-        </ng-icon>
+          <img 
+          [src]="skill.icon" 
+          alt="{{ skill.name }} logo" 
+          class="mx-auto mb-4 w-12 h-12 object-contain text-white"
+        />
             <p class="text-sm sm:text-base font-semibold text-white">{{ skill.name }}</p>
           </div>
         </div>

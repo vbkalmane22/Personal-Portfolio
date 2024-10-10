@@ -21,19 +21,19 @@ import {ionLogoHtml5,ionLogoCss3,ionLogoJavascript,ionLogoReact,ionLogoNodejs,io
 })
 export class SkillsComponent {
   skills = [
-    { name: 'HTML', icon: 'ionLogoHtml5' },
-    { name: 'CSS', icon: 'ionLogoCss3' },
-    { name: 'JavaScript', icon: 'ionLogoJavascript' },
-    { name: 'React', icon: 'ionLogoReact' },
-    { name: 'Node.js', icon: 'ionLogoNodejs' },
-    { name: 'Express.js', icon: 'assets/icons/express.svg' },
-    { name: 'Next.js', icon: 'assets/icons/nextjs.svg' },
-    { name: 'MySQL', icon: 'assets/icons/mysql.svg' },
+    { name: 'HTML',icon: 'html.svg' },
+    { name: 'CSS', icon: 'CSS.svg' },
+    { name: 'JavaScript', icon: 'js.svg' },
+    { name: 'React', icon: 'react.svg' },
+    { name: 'Node.js', icon: 'node.svg' },
+    { name: 'Express.js',icon: 'express.svg' },
+    { name: 'Next.js', icon: 'nextjs.svg' },
+    { name: 'MySQL', icon: 'mysql.svg' },
     
-    { name: 'TypeScript', icon: 'assets/icons/typescript.svg' },
+    { name: 'TypeScript', icon: 'ts.svg' },
   
-    { name: 'Tailwind CSS', icon: 'assets/icons/tailwind.svg' },
-    { name: 'Git', icon: 'assets/icons/tailwind.svg' },
-    { name: 'Vercel', icon: 'ionLogoVercel' },
+    { name: 'Tailwind CSS', icon: 'tailwind.svg' },
+    { name: 'Github',icon: 'git.svg' },
+    { name: 'Vercel', icon: 'vercel.svg' },
   ];
 }

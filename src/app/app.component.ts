@@ -8,12 +8,14 @@ import { ScrollProgressComponent } from "./scroll-progress/scroll-progress.compo
 import { ProjectsComponent } from "./projects/projects.component";
 import { GetintouchComponent } from './getintouch/getintouch.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from "./footer/footer.component";
+import { CertificationsComponent } from "./certifications/certifications.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,ScrollProgressComponent, HeaderComponent, HomeComponent, AboutComponent, SkillsComponent, ProjectsComponent,GetintouchComponent],
+  imports: [RouterOutlet, FormsModule, ScrollProgressComponent, HeaderComponent, HomeComponent, AboutComponent, SkillsComponent, ProjectsComponent, GetintouchComponent, FooterComponent, CertificationsComponent],
   templateUrl: './app.component.html',
 
 

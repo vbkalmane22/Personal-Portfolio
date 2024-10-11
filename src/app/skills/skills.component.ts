@@ -33,7 +33,7 @@ export class SkillsComponent {
     { name: 'TypeScript', icon: 'ts.svg' },
   
     { name: 'Tailwind CSS', icon: 'tailwind.svg' },
-    { name: 'Github',icon: 'git.svg' },
+    { name: 'Git',icon: 'git.svg' },
     { name: 'Vercel', icon: 'vercel.svg' },
   ];
 }

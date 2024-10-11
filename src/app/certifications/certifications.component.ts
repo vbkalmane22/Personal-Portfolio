@@ -19,9 +19,9 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
 })
 export class CertificationsComponent {
   certifications = [
-    { name: 'Responsive web design', issuer: 'Freecodecamp', year: 2024 },
-    { name: 'Data structures and Algorithms in Javascript', issuer: 'Freecodecamp', year: 2024 },
-    { name: 'Total Typescript', issuer: 'Total Typescript', year: 2024 },
-    { name: 'Postman 30 days challenge', issuer: 'Postman', year: 2024 },
+    { name: 'Responsive web design', issuer: 'Freecodecamp', year: 2024 ,image: 'webdesign.png'},
+    { name: 'Javascript Algorithms and Data Structures', issuer: 'Freecodecamp', year: 2024 ,image: 'javascript.png'},
+    { name: 'Typescript Certification', issuer: 'Total Typescript', year: 2024 ,image: 'typescript.png'},
+    { name: 'Postman 30 days challenge', issuer: 'Postman', year: 2024 ,image: 'postman.png'},
   ];
 }
